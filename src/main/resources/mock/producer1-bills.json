@@ -1,0 +1,70 @@
+{
+  "bills":[
+  {
+    "title":"Bill1-Producer1",
+    "creationTime":"2017-09-16T09:10:30Z",
+    "user":{
+      "id": 1,
+      "firstname":"firstname1",
+      "lastname":"lastname1",
+      "address":"address 1"
+    },
+    "items": [
+      {
+        "id": 1,
+        "name": "Item1",
+        "price": 3.4
+      },
+      {
+        "id": 2,
+        "name": "Item2",
+        "price": 2.5
+      },
+      {
+        "id": 3,
+        "name": "Item3",
+        "price": 1.75
+      },
+      {
+        "id": 4,
+        "name": "Item4",
+        "price": 5.99
+      }
+
+    ]
+  },
+  {
+    "title":"Bill2-Producer1",
+    "creationTime":"2017-09-16T09:15:30Z",
+    "user":{
+      "id": 2,
+      "firstname":"firstname2",
+      "lastname":"lastname2",
+      "address":"address 2"
+    },
+    "items": [
+      {
+        "id": 1,
+        "name": "Item1",
+        "price": 3.4
+      },
+      {
+        "id": 5,
+        "name": "Item5",
+        "price": 2.5
+      },
+      {
+        "id": 6,
+        "name": "Item6",
+        "price": 1.75
+      },
+      {
+        "id": 7,
+        "name": "Item7",
+        "price": 5.99
+      }
+
+    ]
+  }
+  ]
+}
