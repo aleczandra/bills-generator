@@ -3,10 +3,10 @@ package bills.billsgenerator.config;
 import java.util.HashMap;
 import java.util.Map;
 
+import bills.billsgenerator.producer.BillGenerator;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
@@ -17,10 +17,10 @@ import org.springframework.kafka.core.ProducerFactory;
  * This class will contain configuration for the producer. Configurations are mapped from application.yml.
  */
 @Configuration
-public class SenderConfig {
+public class BillGeneratorConfig {
 
-    @Value("${spring.kafka.bootstrap-servers}")
-    public static String bootstrapServers;
+    @Value("${kafka.bootstrap-servers}")
+    private String bootstrapServers;
 
     @Bean
     public Map<String, Object> producerConfigs() {
@@ -43,7 +43,8 @@ public class SenderConfig {
         return new KafkaTemplate<>(producerFactory());
     }
 
-
-
-
+    @Bean
+    public BillGenerator getBillGenerator() {
+        return new BillGenerator();
+    }
 }
