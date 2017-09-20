@@ -1,8 +1,7 @@
-{
-  "bills":[
+[
   {
     "title":"Bill1-Producer1",
-    "creationTime":"2017-09-16T09:10:30Z",
+    "creationTime":"1505907118000",
     "user":{
       "id": 1,
       "firstname":"firstname1",
@@ -35,7 +34,7 @@
   },
   {
     "title":"Bill2-Producer1",
-    "creationTime":"2017-09-16T09:15:30Z",
+    "creationTime":"1505907118001",
     "user":{
       "id": 2,
       "firstname":"firstname2",
@@ -67,4 +66,3 @@
     ]
   }
   ]
-}

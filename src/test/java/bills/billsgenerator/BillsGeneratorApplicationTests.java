@@ -1,6 +1,7 @@
 package bills.billsgenerator;
 
 import bills.billsgenerator.producer.BillGenerator;
+import model.avro.Bill;
 import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Test;
@@ -40,7 +41,7 @@ public class BillsGeneratorApplicationTests {
 
 	@Test
 	public void testReceive() throws Exception {
-		sender.send(BILLS_TOPIC, "Hello Spring Kafka!");
+		sender.send(BILLS_TOPIC, new Bill());
 	}
 
 

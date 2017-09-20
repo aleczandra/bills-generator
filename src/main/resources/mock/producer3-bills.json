@@ -1,8 +1,7 @@
-{
-  "bills":[
+[
     {
       "title":"Bill1-Producer3",
-      "creationTime":"2017-09-16T09:10:30Z",
+      "creationTime":"1505907118007",
       "user":{
         "id": 1,
         "firstname":"firstname3",
@@ -35,7 +34,7 @@
     },
     {
       "title":"Bill2-Producer3",
-      "creationTime":"2017-09-16T11:15:30Z",
+      "creationTime":"1505907118006",
       "user":{
         "id": 2,
         "firstname":"firstname2",
@@ -68,7 +67,7 @@
     },
     {
       "title":"Bill3-Producer3",
-      "creationTime":"2017-09-16T09:15:30Z",
+      "creationTime":"1505907118005",
       "user":{
         "id": 2,
         "firstname":"firstname2",
@@ -100,4 +99,3 @@
       ]
     }
   ]
-}
