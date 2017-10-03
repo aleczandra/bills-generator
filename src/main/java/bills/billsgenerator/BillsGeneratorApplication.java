@@ -38,6 +38,10 @@ public class BillsGeneratorApplication implements CommandLineRunner {
 		billGenerator.setMockDataFile("mock/producer2-bills.json");
 		Thread thread2 = new Thread(billGenerator, "BillGenerator2");
 		thread2.start();
+		Thread.sleep(2000);
+		billGenerator.setMockDataFile("mock/producer3-bills.json");
+		Thread thread3 = new Thread(billGenerator, "BillGenerator3");
+		thread3.start();
 	}
 
 	public static void main(String[] args) {

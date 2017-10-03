@@ -39,7 +39,8 @@ public class BillGenerator implements Runnable {
             e.printStackTrace();
         }
         for (Bill b : bills) {
-            System.out.println("I am generator " + Thread.currentThread().getName() + " and  I send to kafka " + b.toString());
+            System.out.println(
+                "I am generator " + Thread.currentThread().getName() + " and  I send to kafka " + b.toString());
             kafkaTemplate.send(BILLS_TOPIC, b);
         }
     }

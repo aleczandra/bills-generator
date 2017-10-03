@@ -1,5 +1,6 @@
 [
   {
+    "id":1,
     "title":"Bill1-Producer1",
     "creationTime":"1505907118000",
     "user":{
@@ -29,10 +30,10 @@
         "name": "Item4",
         "price": 5.99
       }
-
     ]
   },
   {
+    "id":2,
     "title":"Bill2-Producer1",
     "creationTime":"1505907118001",
     "user":{
@@ -62,7 +63,6 @@
         "name": "Item7",
         "price": 5.99
       }
-
     ]
   }
   ]
